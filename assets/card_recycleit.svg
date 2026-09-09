@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 270" width="100%" height="auto">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700;900&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap');
+      .bg { fill: #0B0C0E; }
+      .card-border { stroke: #232730; stroke-width: 1; fill: none; }
+      .num { font-family: 'Space Grotesk', -apple-system, sans-serif; font-size: 14px; font-weight: 700; fill: #10B981; letter-spacing: 1px; }
+      .title { font-family: 'Space Grotesk', -apple-system, sans-serif; font-size: 32px; font-weight: 900; fill: #F4F4F5; letter-spacing: -1px; }
+      .subtitle { font-family: 'Space Grotesk', -apple-system, sans-serif; font-size: 14px; font-weight: 500; fill: #8E9299; }
+      .mono-tag { font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 600; fill: #D4D4D8; }
+      .tag-bg { fill: #161920; stroke: #2B303C; stroke-width: 1; }
+      .diag-bg { fill: #101217; stroke: #1D212A; stroke-width: 1; }
+      .diag-label { font-family: 'JetBrains Mono', monospace; font-size: 10px; fill: #A1A1AA; }
+      .diag-accent { font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 600; fill: #10B981; }
+      .node-circle { fill: #161920; stroke: #10B981; stroke-width: 1.5; }
+      .node-anomaly { fill: #201416; stroke: #EF4444; stroke-width: 1.5; }
+      .edge-line { stroke: #2D3342; stroke-width: 1.5; }
+      .edge-active { stroke: #10B981; stroke-width: 1.5; }
+    </style>
+  </defs>
+
+  <rect width="960" height="270" rx="10" class="bg" />
+  <rect x="0.5" y="0.5" width="959" height="269" rx="9.5" class="card-border" />
+
+  <!-- Left Side: Editorial Details -->
+  <g transform="translate(40, 36)">
+    <text x="0" y="0" class="num">05 // GRAPH TRACEABILITY &amp; PROVENANCE</text>
+    <text x="0" y="34" class="title">RECYCLEIT</text>
+    <text x="0" y="58" class="subtitle">Circular supply-chain intelligence &amp; provenance graph</text>
+
+    <!-- Technical Badges -->
+    <g transform="translate(0, 80)">
+      <rect x="0" y="0" width="80" height="22" rx="4" class="tag-bg" />
+      <text x="8" y="15" class="mono-tag">KÙZUDB</text>
+
+      <rect x="88" y="0" width="88" height="22" rx="4" class="tag-bg" />
+      <text x="96" y="15" class="mono-tag">NETWORKX</text>
+
+      <rect x="184" y="0" width="75" height="22" rx="4" class="tag-bg" />
+      <text x="192" y="15" class="mono-tag">FASTAPI</text>
+
+      <rect x="267" y="0" width="80" height="22" rx="4" class="tag-bg" />
+      <text x="275" y="15" class="mono-tag">NEXT.JS</text>
+    </g>
+
+    <g transform="translate(0, 130)">
+      <text x="0" y="0" class="diag-label" font-size="12px">CORE INVARIANT:</text>
+      <text x="0" y="20" class="diag-accent" font-size="12px">Graph maintains relationships; deterministic code audits material yield.</text>
+      <text x="0" y="38" class="diag-label">LLMs parse messy intake slips into strict JSON schemas.</text>
+      <text x="0" y="56" class="diag-label">Topological path traversal detects shrinkage hotspots and yield loss.</text>
+    </g>
+  </g>
+
+  <!-- Right Side: Graph Topology Diagram -->
+  <g transform="translate(480, 24)">
+    <rect width="440" height="222" rx="6" class="diag-bg" />
+
+    <!-- Top Diagram Label -->
+    <text x="20" y="26" class="diag-accent">TOPOLOGY SCHEMATIC // KÙZUDB DIRECTED PROVENANCE GRAPH</text>
+
+    <!-- Graph Visual Nodes & Edges -->
+    <g transform="translate(20, 50)">
+      <!-- Edges -->
+      <line x1="30" y1="50" x2="110" y2="20" class="edge-active" />
+      <line x1="30" y1="50" x2="110" y2="80" class="edge-active" />
+      <line x1="110" y1="20" x2="210" y2="20" class="edge-active" />
+      <line x1="110" y1="80" x2="210" y2="80" class="edge-line" />
+      <line x1="210" y1="20" x2="290" y2="50" class="edge-active" />
+      <line x1="210" y1="80" x2="290" y2="50" class="edge-line" stroke-dasharray="3 3" />
+      <line x1="290" y1="50" x2="380" y2="50" class="edge-active" />
+
+      <!-- Nodes -->
+      <circle cx="30" cy="50" r="14" class="node-circle" />
+      <text x="22" y="54" class="diag-label">SRC</text>
+
+      <circle cx="110" cy="20" r="14" class="node-circle" />
+      <text x="98" y="24" class="diag-label">SORT</text>
+
+      <circle cx="110" cy="80" r="14" class="node-circle" />
+      <text x="96" y="84" class="diag-label">SHRED</text>
+
+      <circle cx="210" cy="20" r="14" class="node-circle" />
+      <text x="198" y="24" class="diag-label">WASH</text>
+
+      <!-- Anomaly Node (Red) -->
+      <circle cx="210" cy="80" r="14" class="node-anomaly" />
+      <text x="200" y="84" class="diag-label" fill="#EF4444">LOSS</text>
+
+      <circle cx="290" cy="50" r="14" class="node-circle" />
+      <text x="278" y="54" class="diag-label">PELLET</text>
+
+      <circle cx="380" cy="50" r="14" class="node-circle" />
+      <text x="368" y="54" class="diag-label">DEST</text>
+    </g>
+
+    <!-- Graph Summary Box -->
+    <g transform="translate(20, 165)">
+      <text x="0" y="0" class="diag-label">ALGORITHM:</text>
+      <text x="80" y="0" class="diag-accent">Topological sort + NetworkX cycle detection</text>
+
+      <text x="0" y="18" class="diag-label">ANOMALY FLAG:</text>
+      <text x="80" y="18" class="diag-label" fill="#EF4444">Output Mass &gt; Input Mass triggers automated fraud quarantine</text>
+
+      <text x="0" y="36" class="diag-label">AUDIT HASH:</text>
+      <text x="80" y="36" class="diag-label">Every node transition chained via SHA-256 state ledger</text>
+    </g>
+  </g>
+</svg>

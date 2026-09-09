@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 340" width="100%" height="auto">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;900&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap');
+      .bg { fill: #0B0C0E; }
+      .border { stroke: #23262D; stroke-width: 1; fill: none; }
+      .grid-line { stroke: #16181D; stroke-width: 1; stroke-dasharray: 4 4; }
+      .crosshair { stroke: #2A2E38; stroke-width: 1; }
+      .title-bold { font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 78px; font-weight: 900; fill: #F4F4F5; letter-spacing: -3px; }
+      .title-muted { font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 78px; font-weight: 900; fill: #525866; letter-spacing: -3px; }
+      .statement { font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 20px; font-weight: 700; fill: #E4E4E7; letter-spacing: -0.5px; }
+      .mono-label { font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace; font-size: 11px; font-weight: 500; fill: #717684; letter-spacing: 0.5px; }
+      .mono-accent { font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace; font-size: 11px; font-weight: 600; fill: #FF4D00; letter-spacing: 1px; }
+      .badge-bg { fill: #FF4D00; fill-opacity: 0.12; stroke: #FF4D00; stroke-width: 1; stroke-opacity: 0.35; }
+      .dot { fill: #FF4D00; }
+    </style>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1000" height="340" rx="14" class="bg" />
+  <rect x="0.5" y="0.5" width="999" height="339" rx="13.5" class="border" />
+
+  <!-- Subtle Blueprint Grid Lines -->
+  <line x1="60" y1="52" x2="940" y2="52" class="grid-line" />
+  <line x1="60" y1="285" x2="940" y2="285" class="grid-line" />
+  <line x1="560" y1="52" x2="560" y2="285" class="grid-line" />
+
+  <!-- Corner Crosshairs -->
+  <path d="M 52 44 L 52 60 M 44 52 L 60 52" class="crosshair" />
+  <path d="M 948 44 L 948 60 M 940 52 L 956 52" class="crosshair" />
+  <path d="M 52 277 L 52 293 M 44 285 L 60 285" class="crosshair" />
+  <path d="M 948 277 L 948 293 M 940 285 L 956 285" class="crosshair" />
+
+  <!-- Top Metadata Bar -->
+  <text x="60" y="38" class="mono-label">RP // ENG-ID: 2026.09</text>
+  <circle cx="245" cy="34" r="3.5" class="dot" />
+  <text x="258" y="38" class="mono-label">MUMBAI // 19.0760° N, 72.8777° E</text>
+
+  <!-- Accent Status Pill -->
+  <rect x="795" y="24" width="145" height="22" rx="4" class="badge-bg" />
+  <text x="810" y="38" class="mono-accent">SYSTEMS &amp; STATE</text>
+
+  <!-- Main Left Typographic Column -->
+  <g transform="translate(60, 140)">
+    <text x="0" y="0" class="title-bold">RISHI</text>
+    <text x="0" y="72" class="title-muted">PANCHAL</text>
+    <rect x="360" y="25" width="80" height="24" rx="4" class="badge-bg" />
+    <text x="373" y="41" class="mono-accent">v3.0</text>
+  </g>
+
+  <!-- Right Asymmetric Editorial Column -->
+  <g transform="translate(590, 115)">
+    <text x="0" y="0" class="mono-accent">01 // THESIS</text>
+    <text x="0" y="28" class="statement">Software becomes interesting</text>
+    <text x="0" y="52" class="statement">when state is on the line.</text>
+
+    <g transform="translate(0, 85)">
+      <text x="0" y="0" class="mono-label">[CONCURRENCY]</text>
+      <text x="120" y="0" class="mono-label">Zero cyclic deadlocks under load</text>
+      
+      <text x="0" y="22" class="mono-label">[FINANCIAL]</text>
+      <text x="120" y="22" class="mono-label">Linear SHA-256 ledger chaining</text>
+
+      <text x="0" y="44" class="mono-label">[GOVERNANCE]</text>
+      <text x="120" y="44" class="mono-label">Deterministic guardrails over LLMs</text>
+    </g>
+  </g>
+
+  <!-- Bottom Navigation / Index Bar -->
+  <g transform="translate(60, 312)">
+    <text x="0" y="0" class="mono-label">01. APEXLEDGER</text>
+    <text x="145" y="0" class="mono-label">02. WEALTHOPS</text>
+    <text x="285" y="0" class="mono-label">03. TRANSACTX</text>
+    <text x="425" y="0" class="mono-label">04. QUANTSCOPE</text>
+    <text x="575" y="0" class="mono-label">05. RECYCLEIT</text>
+    <text x="815" y="0" class="mono-accent">EXPLORE WORK ↓</text>
+  </g>
+</svg>

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 210" width="100%" height="auto">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700;900&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap');
+      .bg { fill: #0B0C0E; }
+      .border { stroke: #232730; stroke-width: 1; fill: none; }
+      .header-mono { font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 600; fill: #FF4D00; letter-spacing: 1.5px; }
+      .num-giant { font-family: 'Space Grotesk', -apple-system, sans-serif; font-size: 26px; font-weight: 900; fill: #272C36; }
+      .statement { font-family: 'Space Grotesk', -apple-system, sans-serif; font-size: 13px; font-weight: 700; fill: #F4F4F5; }
+      .subtext { font-family: 'JetBrains Mono', monospace; font-size: 10px; fill: #7E8494; }
+      .divider { stroke: #1D212A; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <rect width="960" height="210" rx="8" class="bg" />
+  <rect x="0.5" y="0.5" width="959" height="209" rx="7.5" class="border" />
+
+  <!-- Section Header -->
+  <g transform="translate(30, 26)">
+    <text x="0" y="0" class="header-mono">03 // WORKING PRINCIPLES &amp; OBSESSIONS</text>
+  </g>
+
+  <line x1="30" y1="38" x2="930" y2="38" stroke="#1A1D24" stroke-width="1" />
+
+  <!-- 2x2 Grid of Principles -->
+  <!-- Top Left: 01 -->
+  <g transform="translate(30, 56)">
+    <text x="0" y="24" class="num-giant">01</text>
+    <g transform="translate(42, 10)">
+      <text x="0" y="8" class="statement">A database lock is more interesting than another framework.</text>
+      <text x="0" y="24" class="subtext">Order resource locks deterministically. Cyclic deadlocks are design flaws, not bad luck.</text>
+    </g>
+  </g>
+
+  <!-- Top Right: 02 -->
+  <g transform="translate(490, 56)">
+    <text x="0" y="24" class="num-giant">02</text>
+    <g transform="translate(42, 10)">
+      <text x="0" y="8" class="statement">An LLM should never be the final authority over state.</text>
+      <text x="0" y="24" class="subtext">Probabilistic models propose and draft. Only deterministic invariants commit to disk.</text>
+    </g>
+  </g>
+
+  <line x1="30" y1="120" x2="930" y2="120" class="divider" />
+
+  <!-- Bottom Left: 03 -->
+  <g transform="translate(30, 136)">
+    <text x="0" y="24" class="num-giant">03</text>
+    <g transform="translate(42, 10)">
+      <text x="0" y="8" class="statement">Concurrency exposes architecture faster than documentation does.</text>
+      <text x="0" y="24" class="subtext">Everything works with one thread. Systems prove their worth when 50 workers compete for one row.</text>
+    </g>
+  </g>
+
+  <!-- Bottom Right: 04 -->
+  <g transform="translate(490, 136)">
+    <text x="0" y="24" class="num-giant">04</text>
+    <g transform="translate(42, 10)">
+      <text x="0" y="8" class="statement">Virtual threads solve I/O blocking; connection pools remain the truth.</text>
+      <text x="0" y="24" class="subtext">Decoupling carrier threads is straightforward. Managing lock contention and saturation is engineering.</text>
+    </g>
+  </g>
+</svg>

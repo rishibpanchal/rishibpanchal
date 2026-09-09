@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 270" width="100%" height="auto">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700;900&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap');
+      .bg { fill: #0B0C0E; }
+      .card-border { stroke: #232730; stroke-width: 1; fill: none; }
+      .num { font-family: 'Space Grotesk', -apple-system, sans-serif; font-size: 14px; font-weight: 700; fill: #00D4AA; letter-spacing: 1px; }
+      .title { font-family: 'Space Grotesk', -apple-system, sans-serif; font-size: 32px; font-weight: 900; fill: #F4F4F5; letter-spacing: -1px; }
+      .subtitle { font-family: 'Space Grotesk', -apple-system, sans-serif; font-size: 14px; font-weight: 500; fill: #8E9299; }
+      .mono-tag { font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 600; fill: #D4D4D8; }
+      .tag-bg { fill: #161920; stroke: #2B303C; stroke-width: 1; }
+      .diag-bg { fill: #101217; stroke: #1D212A; stroke-width: 1; }
+      .diag-label { font-family: 'JetBrains Mono', monospace; font-size: 10px; fill: #A1A1AA; }
+      .diag-accent { font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 600; fill: #00D4AA; }
+      .diag-warn { font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 600; fill: #FFB020; }
+      .diag-box { fill: #14171F; stroke: #2E3442; stroke-width: 1; rx: 4px; }
+      .guard-box { fill: #1C1917; stroke: #D97706; stroke-width: 1; rx: 4px; }
+      .diag-line { stroke: #333948; stroke-width: 1.5; fill: none; }
+      .diag-arrow { stroke: #00D4AA; stroke-width: 1.5; fill: none; }
+    </style>
+  </defs>
+
+  <rect width="960" height="270" rx="10" class="bg" />
+  <rect x="0.5" y="0.5" width="959" height="269" rx="9.5" class="card-border" />
+
+  <!-- Left Side: Editorial Details -->
+  <g transform="translate(40, 36)">
+    <text x="0" y="0" class="num">02 // DETERMINISTIC GOVERNANCE OVER AI</text>
+    <text x="0" y="34" class="title">WEALTHOPS</text>
+    <text x="0" y="58" class="subtitle">Controlled agentic workflows for institutional wealth management</text>
+
+    <!-- Technical Badges -->
+    <g transform="translate(0, 80)">
+      <rect x="0" y="0" width="100" height="22" rx="4" class="tag-bg" />
+      <text x="8" y="15" class="mono-tag">PYTHON 3.13</text>
+
+      <rect x="108" y="0" width="95" height="22" rx="4" class="tag-bg" />
+      <text x="116" y="15" class="mono-tag">LANGGRAPH</text>
+
+      <rect x="211" y="0" width="80" height="22" rx="4" class="tag-bg" />
+      <text x="219" y="15" class="mono-tag">FASTAPI</text>
+
+      <rect x="299" y="0" width="85" height="22" rx="4" class="tag-bg" />
+      <text x="307" y="15" class="mono-tag">REACT 19</text>
+    </g>
+
+    <g transform="translate(0, 130)">
+      <text x="0" y="0" class="diag-label" font-size="12px">CORE INVARIANT:</text>
+      <text x="0" y="20" class="diag-accent" font-size="12px">LLMs propose multi-step actions; code deterministically verifies.</text>
+      <text x="0" y="38" class="diag-label">Non-LLM guardrails strictly enforce $100k limits &amp; 5% drift caps.</text>
+      <text x="0" y="56" class="diag-label">Chief Risk Officer dual-authorization queue intercepts violations.</text>
+    </g>
+  </g>
+
+  <!-- Right Side: Workflow Pipeline Diagram -->
+  <g transform="translate(480, 24)">
+    <rect width="440" height="222" rx="6" class="diag-bg" />
+
+    <!-- Top Diagram Label -->
+    <text x="20" y="26" class="diag-accent">CONTROL PIPELINE // MULTI-TIER FIDUCIARY GATES</text>
+
+    <!-- Step 1: Request -->
+    <rect x="20" y="44" width="85" height="48" rx="4" class="diag-box" />
+    <text x="28" y="64" class="diag-label">NL INPUT</text>
+    <text x="28" y="78" class="diag-accent">Advisor Query</text>
+
+    <!-- Arrow -->
+    <path d="M 105 68 L 125 68" class="diag-arrow" />
+
+    <!-- Step 2: LangGraph -->
+    <rect x="130" y="44" width="105" height="48" rx="4" class="diag-box" />
+    <text x="138" y="64" class="diag-label">LANGGRAPH</text>
+    <text x="138" y="78" class="diag-accent">Planner + RAG</text>
+
+    <!-- Arrow -->
+    <path d="M 235 68 L 255 68" class="diag-arrow" />
+
+    <!-- Step 3: Deterministic Guardrail -->
+    <rect x="260" y="44" width="155" height="48" rx="4" class="guard-box" />
+    <text x="270" y="64" class="diag-warn">GUARDRAIL GATE</text>
+    <text x="270" y="78" class="diag-warn">Cap: $100k | Drift: 5%</text>
+
+    <!-- Split Arrow: Down for Approval, Straight for Auto-Execute -->
+    <path d="M 337 92 L 337 135" class="diag-line" stroke-dasharray="3 3" />
+    <path d="M 337 135 L 260 135" class="diag-arrow" />
+
+    <!-- Step 4: HITL Approval -->
+    <rect x="20" y="112" width="235" height="48" rx="4" class="diag-box" />
+    <text x="30" y="132" class="diag-label">DUAL-AUTHORIZATION HITL</text>
+    <text x="30" y="146" class="diag-accent">Chief Risk Officer Sign-off Queue</text>
+
+    <!-- Step 5: Audit -->
+    <rect x="280" y="112" width="135" height="48" rx="4" class="diag-box" />
+    <text x="290" y="132" class="diag-label">COMPLIANCE</text>
+    <text x="290" y="146" class="diag-accent">Immutable Audit</text>
+
+    <!-- Micro annotations -->
+    <text x="20" y="195" class="diag-label">PERSONAS:</text>
+    <text x="90" y="195" class="diag-label">5-Role RBAC (Admin, Risk Officer, Analyst, Advisor)</text>
+    <text x="20" y="210" class="diag-label">GOVERNANCE:</text>
+    <text x="90" y="210" class="diag-accent">Zero prompt injection exposure into core database records</text>
+  </g>
+</svg>

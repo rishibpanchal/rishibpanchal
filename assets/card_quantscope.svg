@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 270" width="100%" height="auto">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700;900&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap');
+      .bg { fill: #0B0C0E; }
+      .card-border { stroke: #232730; stroke-width: 1; fill: none; }
+      .num { font-family: 'Space Grotesk', -apple-system, sans-serif; font-size: 14px; font-weight: 700; fill: #A855F7; letter-spacing: 1px; }
+      .title { font-family: 'Space Grotesk', -apple-system, sans-serif; font-size: 32px; font-weight: 900; fill: #F4F4F5; letter-spacing: -1px; }
+      .subtitle { font-family: 'Space Grotesk', -apple-system, sans-serif; font-size: 14px; font-weight: 500; fill: #8E9299; }
+      .mono-tag { font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 600; fill: #D4D4D8; }
+      .tag-bg { fill: #161920; stroke: #2B303C; stroke-width: 1; }
+      .diag-bg { fill: #101217; stroke: #1D212A; stroke-width: 1; }
+      .diag-label { font-family: 'JetBrains Mono', monospace; font-size: 10px; fill: #A1A1AA; }
+      .diag-accent { font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 600; fill: #A855F7; }
+      .diag-box { fill: #14171F; stroke: #2E3442; stroke-width: 1; rx: 4px; }
+      .chart-line { stroke: #A855F7; stroke-width: 2; fill: none; }
+      .chart-area { fill: url(#purple-grad); }
+      .grid-line { stroke: #1D212A; stroke-width: 1; }
+    </style>
+    <linearGradient id="purple-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#A855F7" stop-opacity="0.0" />
+    </linearGradient>
+  </defs>
+
+  <rect width="960" height="270" rx="10" class="bg" />
+  <rect x="0.5" y="0.5" width="959" height="269" rx="9.5" class="card-border" />
+
+  <!-- Left Side: Editorial Details -->
+  <g transform="translate(40, 36)">
+    <text x="0" y="0" class="num">04 // QUANTITATIVE RISK &amp; BACKTESTING</text>
+    <text x="0" y="34" class="title">QUANTSCOPE</text>
+    <text x="0" y="58" class="subtitle">Institutional-grade market analytics &amp; portfolio backtester</text>
+
+    <!-- Technical Badges -->
+    <g transform="translate(0, 80)">
+      <rect x="0" y="0" width="75" height="22" rx="4" class="tag-bg" />
+      <text x="8" y="15" class="mono-tag">FASTAPI</text>
+
+      <rect x="83" y="0" width="80" height="22" rx="4" class="tag-bg" />
+      <text x="91" y="15" class="mono-tag">REACT 18</text>
+
+      <rect x="171" y="0" width="115" height="22" rx="4" class="tag-bg" />
+      <text x="179" y="15" class="mono-tag">NUMPY / PANDAS</text>
+
+      <rect x="294" y="0" width="110" height="22" rx="4" class="tag-bg" />
+      <text x="302" y="15" class="mono-tag">TRADINGVIEW</text>
+    </g>
+
+    <g transform="translate(0, 130)">
+      <text x="0" y="0" class="diag-label" font-size="12px">CORE INVARIANT:</text>
+      <text x="0" y="20" class="diag-accent" font-size="12px">Vectorized risk computations across 10+ years of ticker series.</text>
+      <text x="0" y="38" class="diag-label">Real-time signal discovery for RSI divergence and volume breakouts.</text>
+      <text x="0" y="56" class="diag-label">Sub-second rendering with TradingView lightweight charts &amp; AG Grid.</text>
+    </g>
+  </g>
+
+  <!-- Right Side: Risk Curve & Metrics Diagram -->
+  <g transform="translate(480, 24)">
+    <rect width="440" height="222" rx="6" class="diag-bg" />
+
+    <!-- Top Diagram Label -->
+    <text x="20" y="26" class="diag-accent">BACKTEST SIMULATION ENGINE // 10-YR EQUITY CURVE</text>
+
+    <!-- Synthetic Chart Curve -->
+    <g transform="translate(20, 36)">
+      <line x1="0" y1="20" x2="400" y2="20" class="grid-line" />
+      <line x1="0" y1="55" x2="400" y2="55" class="grid-line" />
+      <line x1="0" y1="90" x2="400" y2="90" class="grid-line" />
+
+      <path d="M 0 95 L 45 80 L 90 88 L 135 60 L 180 65 L 225 35 L 270 42 L 315 15 L 360 22 L 400 5 L 400 110 L 0 110 Z" class="chart-area" />
+      <path d="M 0 95 L 45 80 L 90 88 L 135 60 L 180 65 L 225 35 L 270 42 L 315 15 L 360 22 L 400 5" class="chart-line" />
+    </g>
+
+    <!-- Vectorized Metrics Grid -->
+    <g transform="translate(20, 158)">
+      <rect x="0" y="0" width="90" height="42" rx="4" class="diag-box" />
+      <text x="10" y="16" class="diag-label">SHARPE</text>
+      <text x="10" y="32" class="diag-accent" font-size="12px">2.41</text>
+
+      <rect x="98" y="0" width="90" height="42" rx="4" class="diag-box" />
+      <text x="108" y="16" class="diag-label">VaR (95%)</text>
+      <text x="108" y="32" class="diag-accent" font-size="12px">-1.84%</text>
+
+      <rect x="196" y="0" width="95" height="42" rx="4" class="diag-box" />
+      <text x="206" y="16" class="diag-label">MAX DD</text>
+      <text x="206" y="32" class="diag-accent" font-size="12px">-12.3%</text>
+
+      <rect x="299" y="0" width="100" height="42" rx="4" class="diag-box" />
+      <text x="309" y="16" class="diag-label">UNIVERSE</text>
+      <text x="309" y="32" class="diag-accent" font-size="12px">500+ Assets</text>
+    </g>
+
+    <text x="20" y="214" class="diag-label">EXECUTION: Vectorized NumPy array transforms without Python loop overhead</text>
+  </g>
+</svg>
