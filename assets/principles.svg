@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="140" viewBox="0 0 860 140">
+<style>
+.t{font-family:Manrope, 'Segoe UI', Helvetica, Arial, sans-serif}
+@keyframes a{0%,100%{transform:translateX(0);opacity:.8}50%{transform:translateX(320px);opacity:1}}
+@keyframes b{0%,100%{transform:translateX(0);opacity:.7}50%{transform:translateX(-240px);opacity:1}}
+@keyframes p{0%,100%{transform:scale(1);opacity:.75}50%{transform:scale(1.15);opacity:1}}
+@keyframes up{0%{transform:translate(0,0) scale(1);opacity:0}20%{opacity:1}80%{opacity:1}100%{transform:translate(-20px,-70px) scale(.4);opacity:0}}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
+.g1{animation:a 9s ease-in-out infinite}.g2{animation:b 12s ease-in-out infinite}
+.g3{animation:a 14s ease-in-out infinite reverse}.fire{transform-origin:740px 100px;animation:p 4s ease-in-out infinite}
+.e1{animation:up 3s ease-in infinite}.e2{animation:up 4s ease-in 1s infinite}.e3{animation:up 2.6s ease-in 2s infinite}
+.char{animation:fl 6s ease-in-out infinite}
+@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.dot{animation:blink 1.8s ease-in-out infinite}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<defs>
+  <radialGradient id="v" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#6e14d2" stop-opacity=".72"/><stop offset=".4" stop-color="#5a0fb4" stop-opacity=".35"/><stop offset=".7" stop-color="#5a0fb4" stop-opacity="0"/></radialGradient>
+  <radialGradient id="b" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#283cff" stop-opacity=".6"/><stop offset=".45" stop-color="#1e32c8" stop-opacity=".25"/><stop offset=".7" stop-color="#1e32c8" stop-opacity="0"/></radialGradient>
+  <radialGradient id="c" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#00bee6" stop-opacity=".34"/><stop offset=".7" stop-color="#00bee6" stop-opacity="0"/></radialGradient>
+  <radialGradient id="f1" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#ff6400" stop-opacity=".6"/><stop offset=".4" stop-color="#ff3200" stop-opacity=".2"/><stop offset=".7" stop-color="#ff0000" stop-opacity="0"/></radialGradient>
+  <radialGradient id="f2" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#ffb400" stop-opacity=".5"/><stop offset=".4" stop-color="#ff5000" stop-opacity=".15"/><stop offset=".7" stop-color="#ff0000" stop-opacity="0"/></radialGradient>
+  <linearGradient id="bar" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8a3cff"/><stop offset="1" stop-color="#2a8cff"/></linearGradient>
+</defs><clipPath id="cp"><rect width="860" height="140" rx="16"/></clipPath><rect width="860" height="140" rx="16" fill="#08080c"/><g clip-path="url(#cp)"><ellipse class="g1" cx="160" cy="170" rx="260" ry="190" fill="url(#v)"/><ellipse class="g2" cx="400" cy="170" rx="220" ry="150" fill="url(#b)"/><ellipse class="g3" cx="560" cy="180" rx="170" ry="120" fill="url(#c)"/></g><rect x=".5" y=".5" width="859" height="139" rx="16" fill="none" stroke="#6e50dc" stroke-opacity=".28"/><text class="t" x="48" y="52" font-size="22" font-weight="800" fill="#f2f0ff" text-anchor="start" >Working principles</text><rect x="48" y="78" width="138" height="36" rx="18" fill="#6e50dc" fill-opacity=".14" stroke="#8a6cff" stroke-opacity=".45"/><text class="t" x="117.0" y="101" font-size="15" font-weight="600" fill="#e4defc" text-anchor="middle" >Concurrency</text><rect x="198" y="78" width="118" height="36" rx="18" fill="#6e50dc" fill-opacity=".14" stroke="#8a6cff" stroke-opacity=".45"/><text class="t" x="257.0" y="101" font-size="15" font-weight="600" fill="#e4defc" text-anchor="middle" >Isolation</text><rect x="328" y="78" width="128" height="36" rx="18" fill="#6e50dc" fill-opacity=".14" stroke="#8a6cff" stroke-opacity=".45"/><text class="t" x="392.0" y="101" font-size="15" font-weight="600" fill="#e4defc" text-anchor="middle" >Provenance</text><rect x="468" y="78" width="128" height="36" rx="18" fill="#6e50dc" fill-opacity=".14" stroke="#8a6cff" stroke-opacity=".45"/><text class="t" x="532.0" y="101" font-size="15" font-weight="600" fill="#e4defc" text-anchor="middle" >Governance</text><rect x="608" y="78" width="68" height="36" rx="18" fill="#6e50dc" fill-opacity=".14" stroke="#8a6cff" stroke-opacity=".45"/><text class="t" x="642.0" y="101" font-size="15" font-weight="600" fill="#e4defc" text-anchor="middle" >Risk</text></svg>
