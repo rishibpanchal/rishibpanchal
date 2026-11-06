@@ -2,8 +2,6 @@
 
 <a href="https://github.com/rishibpanchal"><img src="https://raw.githubusercontent.com/rishibpanchal/rishibpanchal/main/assets/hero.svg" alt="Rishi Panchal" width="100%"/></a>
 
-<a href="https://github.com/rishibpanchal/ApexLedger"><img src="https://raw.githubusercontent.com/rishibpanchal/rishibpanchal/main/assets/card_apexledger.svg" alt="ApexLedger - Asynchronous Trade Settlement and Financial Engine" width="100%"/></a>
-
 <a href="https://github.com/rishibpanchal/WealthOps"><img src="https://raw.githubusercontent.com/rishibpanchal/rishibpanchal/main/assets/card_wealthops.svg" alt="WealthOps - AI-Powered Wealth Management Operations Platform" width="100%"/></a>
 
 <a href="https://github.com/rishibpanchal/TransactX"><img src="https://raw.githubusercontent.com/rishibpanchal/rishibpanchal/main/assets/card_transactx.svg" alt="TransactX - Enterprise Banking Core and ATM Simulator" width="100%"/></a>
@@ -18,6 +16,6 @@
 
 <a href="https://github.com/rishibpanchal"><img src="https://raw.githubusercontent.com/rishibpanchal/rishibpanchal/main/assets/footer.svg" alt="Get in touch" width="100%"/></a>
 
-<a href="https://github.com/rishibpanchal"><img src="https://raw.githubusercontent.com/rishibpanchal/rishibpanchal/main/assets/btn_github.svg" alt="GitHub"/></a>  <a href="https://linkedin.com/in/rishi-panchal"><img src="https://raw.githubusercontent.com/rishibpanchal/rishibpanchal/main/assets/btn_linkedin.svg" alt="LinkedIn"/></a>  <a href="mailto:rishibpanchal006@gmail.com"><img src="https://raw.githubusercontent.com/rishibpanchal/rishibpanchal/main/assets/btn_email.svg" alt="Email"/></a>
+<a href="https://github.com/rishibpanchal"><img src="https://raw.githubusercontent.com/rishibpanchal/rishibpanchal/main/assets/btn_github.svg" alt="GitHub"/></a>  <a href="https://linkedin.com/in/rishii-panchal"><img src="https://raw.githubusercontent.com/rishibpanchal/rishibpanchal/main/assets/btn_linkedin.svg" alt="LinkedIn"/></a>  <a href="mailto:rishibpanchal006@gmail.com"><img src="https://raw.githubusercontent.com/rishibpanchal/rishibpanchal/main/assets/btn_email.svg" alt="Email"/></a>
 
 </div>
